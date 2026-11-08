@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search millions of books with the free Open Library API.">
+  <title>Book Search | Rahimjon Komiljonov</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">Skip to results</a>
+  <header class="site-header">
+    <p class="eyebrow">K0126002 · Web Programming</p>
+    <h1>Book Search</h1>
+    <p class="lead">Search the Open Library, millions of books, free and without an account.</p>
+    <form id="search-form" class="search-form" role="search">
+      <label class="sr-only" for="query">Search books by title or author</label>
+      <input id="query" name="query" type="search" placeholder="Try &quot;harry potter&quot; or &quot;dune&quot;" autocomplete="off" required>
+      <button id="search-btn" type="submit">Search</button>
+    </form>
+  </header>
+
+  <main>
+    <p id="status" class="status" role="status" aria-live="polite">Type a title or an author to begin.</p>
+    <section id="results" class="grid" aria-label="Search results"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data from <a href="https://openlibrary.org/developers/api" target="_blank" rel="noopener noreferrer">Open Library</a>. Part of my <a href="https://rahimjonkomiljonov.github.io/Web-Programming/">Web Programming coursework</a>.</p>
+  </footer>
+</body>
+</html>
